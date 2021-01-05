@@ -24,18 +24,21 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 
 Load balancing ensures that the application will be highly available, in addition to restricting high traffic to the network.
 - What aspect of security do load balancers protect? - They defend and organisations from DDos attacks, by shifting attacks from the corporate server to a public cloud provider. They are less costly as well as more efficient to manange and maintian than hardware defencses such as perimeter firewalls.
-- What is the advantage of a jump box?_
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- What is the advantage of a jump box? They provide and gateway to a private network which minimizes the attack surface making it harder to launcvh an attack.
+
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the network and system logs.
+- What does Filebeat watch for? It monitors file changes and locations then forward the data to Elasticserach/Losgtash or indexing.
+  
+- What does Metricbeat record? It keeps a record of statics/metics before sending the to Elasticserach/Losgtash 
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.8   | Linux            |
+| Jump Box | Gateway  | 10.0.0.8(private   | Linux            |
 | TODO     |          |            |                  |
 | TODO     |          |            |                  |
 | TODO     |          |            |                  |
