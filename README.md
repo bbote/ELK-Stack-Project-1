@@ -42,25 +42,28 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Web-1     | DVWA Web Server          | 10.0.0.9           |                  |
 | Web-2     | DVWA Web Server     | 10.0.0.9           |                  |
 | Web-4     | DVWA Web Server         | 10.0.0.4            |                   |
-| Web-3     | Elk Server         | 10.1.04           |                  |
+| Web-3     | Elk Server         | 10.1.0.4           |                  |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 20.37.245.72
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by eachother.
+- Which machine did you allow to access your ELK VM? The Web-1,Web-2,Web-4 VM's send traffic to the Web-3 which is Elk Server.
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes              | 23.37.245.72    |
+| Web-1     | No               | 10.0.0.0/23             |
+| Web-2     | No               | 10.0.0.0/23             |
+| Web-4     | No               | 10.0.0.0/23             |
+| Web-3 (Elk Server)     | No               | 10.0.0.0/23             |
+
 
 ### Elk Configuration
 
