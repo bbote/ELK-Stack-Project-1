@@ -38,10 +38,11 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.8(private   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.8 | Linux            |
+| Web-1     | DVWA Web Server          | 10.0.0.9           |                  |
+| Web-2     | DVWA Web Server     | 10.0.0.9           |                  |
+| Web-4     | DVWA Web Server         | 10.0.0.4            |                   |
+| Web-3     | Elk Server         | 10.1.04           |                  |
 
 ### Access Policies
 
