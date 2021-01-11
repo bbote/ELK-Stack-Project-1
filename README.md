@@ -69,18 +69,18 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
-•	Manual configuration is prone to human error, therefore it is the best alternative for configuration.
-•	It is also able to automate complex multi-tier IT application environments.
+- Manual configuration is prone to human error, therefore it is the best alternative for configuration.
+- It is also able to automate complex multi-tier IT application environments.
 
 The playbook implements the following tasks:
-•	Install Docker : the Docker engine, used for running containers
-•	Install pip3: Package used to install Python software
-•	Install Docker module: Python client for Docker
-•	Increase virtual memory for the ELK container
-•	Download and launch Docker-ELK container with port mapping set to
-o	5601:5601
-o	9200:9200
-o	5044:5044
+- Install Docker : the Docker engine, used for running containers
+- Install pip3: Package used to install Python software
+- Install Docker module: Python client for Docker
+- Increase virtual memory for the ELK container
+- Download and launch Docker-ELK container with port mapping set to
+  - 5601:5601
+  - 9200:9200
+  - 5044:5044
 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
