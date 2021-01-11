@@ -62,7 +62,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-1     | No               | 10.0.0.0/23             |
 | Web-2     | No               | 10.0.0.0/23             |
 | Web-4     | No               | 10.0.0.0/23             |
-| Web-3 (Elk Server)     | No               | 10.0.0.0/23             |
+| Web-3 (Elk Server)     | No               | 10.0.0.0/023 172.198.225.210:5601            |
 
 
 ### Elk Configuration
