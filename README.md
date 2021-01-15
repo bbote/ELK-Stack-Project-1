@@ -87,14 +87,21 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![alt text here](https://github.com/bbote/ELK-Stack-Project./raw/main/Diagrams/ELK-VM%20Docker%20PS..png)
 
+Dashboard
+
 ![alt text here](https://github.com/bbote/ELK-Stack-Project./raw/main/Diagrams/ELK-VM%20Docker%20Dashboard.png)
+![alt text here](https://github.com/bbote/ELK-Stack-Project./blob/main/Diagrams/Metricbeat%20Dashboard.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Wed-1 (10.0.0.9)
+- Wed-2 (10.0.0.10)
+- Wed-1 (10.0.0.4)
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+![alt text here](https://github.com/bbote/ELK-Stack-Project./blob/main/Diagrams/Filebeat%20playbook.png)
+![alt text here](https://github.com/bbote/ELK-Stack-Project./blob/main/Diagrams/Metricbeat%20playbook.png)
+
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
