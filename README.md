@@ -104,7 +104,8 @@ We have installed the following Beats on these machines:
 
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat collects data about the file system, including which files have changed and when they were changed.
+- Metricbeat collects machine metrics, such as uptime.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -113,10 +114,21 @@ SSH into the control node and follow the steps below:
 - Copy the _____ file to _____.
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
+Copy the YAML file to '/etc/ansible' directory.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+Update the /etc/ansible/hosts' file to include 'hosts' group, private IP address, the following line 'ansible_python_interpreter=/usr/bin/python3'
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+Run the playbook, and navigate to 'curl localhost/setup.php' to check that the installation worked as expected.
+
+The playbooks are listed as 'install-elk.yml' // 'filebeat-playbook.yml' // 'metricbeat-playbook.yml' // 'ansible_config.yml' and are meant to be copied in the '/etc/ansible' directory.
+
+Update the '/etc/ansible/hosts' directory with the hosts group name with the correlating IP addresses underneath to specify on which machines to run the playbooks.
+
+To check if the ELK server is running, navigate to 'http://[your.VM.IP]:5601/app/kibana'
+
+install-elk.yml: This will install the ELK stack on the VM in your <hosts> group.
+
+install-filebeat.yml: This will install Filebeat on your <hosts> group.
+
+install-metricbeat.yml: This will install Metricbeat on your <hosts> group.
+
