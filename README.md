@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![topology](https://github.com/bbote/ELK-Stack-Project./blob/main/Diagrams/Topology.png)
+   -[topology](https://github.com/bbote/ELK-Stack-Project./blob/main/Diagrams/Topology.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the RedTeam file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -109,12 +109,6 @@ These Beats allow us to collect the following information from each machine:
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
-
-SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-Copy the YAML file to '/etc/ansible' directory.
 
 Update the /etc/ansible/hosts' file to include 'hosts' group, private IP address, the following line 'ansible_python_interpreter=/usr/bin/python3'
 
